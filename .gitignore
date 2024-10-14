@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Ignored Folders
+node_modules/
+build/
+env/
+media/
+__pycache__/
