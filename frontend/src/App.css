@@ -1,0 +1,219 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Bebas+Neue&family=Roboto:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100..400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    /* background-image: url('https://wallpapers.com/images/high/real-estate-low-angle-shot-c9wnxm14uva0ydio.webp'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    background-color: rgba(245, 247, 247, 1);
+    background-blend-mode: overlay;
+
+    min-height: 100vh;
+}
+
+.padding-left {
+    padding-left: 10px;
+}
+
+/* Circular Nav */
+.toggle-menu {
+    border: none !important;
+    background-color: #1E3A8A !important;
+    transition: all 1s !important;
+}
+
+.toggle-menu:hover {
+    background-color: #010f37 !important;
+}
+
+.circular-nav-left,
+.circular-nav-right {
+    position: absolute;
+    top: 40px;
+}
+
+.circular-nav-left {
+    left: 40px;
+}
+
+.circular-nav-right {
+    right: 40px;
+}
+
+.menu-item {
+    border: none !important;
+    background-color: #FFFFFF !important;
+    transition: all 1s !important;
+}
+
+.menu-item:hover {
+    background-color: #DCE6F7 !important;
+}
+
+.brand-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.2rem;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    color: #010f37;
+    background-image: linear-gradient(90deg, #1E3A8A, #042d42);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 90px;
+}
+
+@media (max-width: 1200px) {
+    .brand-heading {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .brand-heading {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .brand-heading {
+        font-size: 1.5rem;
+    }
+}
+
+/* Buttons */
+.getbackbtn {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #a7ff43, #1E3A8A);
+    transition: all 1s;
+}
+
+.getbackbtn:hover {
+    transform: translateX(2px) translateY(-4px);
+}
+
+@media (max-width: 768px) {
+    .getbackbtn {
+        font-size: 1.5rem;
+    }
+}
+
+/* Card */
+.card {
+    background-color: #ffffff;
+    padding: 0.3rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    border-radius: 1rem;
+}
+
+/* Listing Detail */
+.heading-component {
+    text-align: center;
+    padding: 16px 0;
+    color: rgb(2, 32, 140);
+}
+
+.link-bar {
+    background-color: #517acd;
+    text-align: left;
+    padding: 8px 12px;
+}
+
+.detail {
+    color: #1E3A8A;
+}
+
+.image-div figure img {
+    border-radius: 8px;
+}
+
+/* Buttons for Listing */
+.buynow .btn-buynow {
+    background-color: #749ac7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+/* About Section */
+h1,
+h2,
+h5 {
+    color: #1E3A8A;
+}
+
+/* Subheading */
+.subheading-about {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #01375b;
+}
+
+@media (max-width: 1000px) {
+    .subheading-about {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .subheading-about {
+        font-size: 1.2rem;
+    }
+}
+
+/* Cards for About */
+.top-seller-card,
+.other-realtors-card {
+    background-color: rgb(248, 245, 245);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+}
+
+.top-seller-card:hover,
+.other-realtors-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Buy Page */
+.add-border {
+    border: 2px solid #1E3A8A;
+}
+
+.price-detail-div {
+    background-color: #749ac7;
+    color: white;
+    padding: 10px;
+}
+
+.make-payment-div {
+    background-color: #749ac7;
+    color: white;
+    padding: 10px;
+}
